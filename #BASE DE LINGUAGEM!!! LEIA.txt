@@ -1,0 +1,106 @@
+Back-end de sistemas web, ciência de dados, machine learning 
+
+
+
+
+
+%d ou %i	Int (inteiro)	Exibe um valor inteiro.
+
+%f	Float ou double	Exibe um valor decimal.
+
+%ld	Long Int	Exibe um número inteiro longo.
+
+%e ou %E	Float e double	Exibe um número exponencial (número científico).
+
+%c	Char (caractere)	Exibe um caractere.
+
+%o	Int	Exibe um número inteiro em formato octal.
+
+%x ou %X	Int	Exibe um número inteiro no formato hexadecimal.
+
+%s	Char	Exibe uma cadeia de caracteres (string).
+
+%r	Boolean	Exibe true ou false (verdadeiro ou falso).  
+
+input 
+ 
+\n	Insere uma quebra de linha.
+
+\t	Insere tabulação horizontal.
+
+\v	Insere tabulação vertical.
+
+\r	Equivalente ao efeito da tecla Enter.
+
+\’	Aspas simples.
+
+
+\”	Aspas duplas.
+
+\\	Insere uma barra invertida (backslash).
+
+\a	Chamado de ASC bell ou beep do sistema. Se houver suporte, aciona um bipe.
+
+\b	Aciona o backspace, ou seja, apaga o caractere anterior.
+
+\f	Insere uma quebra de página.
+
+\u	Insere um caractere UNICODE. Deve acompanhar um código com 4 números.
+
+
+
+
+TIPOS PRIMITIVOS
+int - para números inteiros.
+str - para conjunto de caracteres.
+bool - armazena True ou False.
+list - para agrupar um conjunto de elementos.
+tupla - semelhante ao tipo list, porém, imutável.
+dic - para agrupar elementos que serão recuperados por uma chave.
+
+
+
+
++ (Adição ou sinal positivo)	- Realiza a soma entre operandos - Adiciona o sinal de positivo ao número	- 10 + 7 - +4
+- (Subtração ou sinal negativo)	- Realiza a subtração entre operandos - Adiciona o sinal de negativo ao número	- 10 - 7 - -4
+* (Multiplicação)	Realiza a multiplicação entre operandos	3 * 4
+/ (Divisão)	Realiza a divisão entre operandos	10 / 5
+// (Divisão inteira)	Realiza a divisão entre operandos e a parte decimal do resultado	10 // 6
+% (Módulo)	Retorna o resto da divisão entre operandos	4 % 2
+** (Exponenciação)	Retorna um número elevado a potência de outro	4 ** 2
+
+
+
+
+>(Maior que)	Verifica se um valor é maior que outro	x > 5
+<(Menor que)	Verifica se um valor é menor que outro	x < 5
+== (Igual a)	Verifica se um valor é igual a outro	x == 5
+!= (Diferente de)	Verifica se um valor é diferente de outro	x != 5
+>= (Maior ou igual a)	Verifica se um valor é maior ou igual a outro	x >= 5
+<= (Menor ou igual a)	Verifica se um valor é menor ou igual a outro	x <= 5
+
+
+
+and	Retorna True se todas as condições forem verdadeiras, caso contrário retorna    False	x > 1 and x < 5
+or	Retorna True se uma das condições for verdadeiras, caso contrário retorna     False	x > 1 or x < 5
+not	Inverte o resultado: se o resultado da expressão for True, o operador retorna   false	not(x > 1 and x < 5)
+
+
+
+
+Regras de precedência dos operadores matemáticos
+Agora que já vimos uma porção de operadores matemáticos, é pertinente falar sobre as regras de precedência que regem a ordem de avaliação
+das operações dentro de uma expressão matemática. Python segue a mesma convenção usada na matemática; a ordem de avaliação dos operadores, 
+do de maior precedência para o de menor precedência, é a seguinte:
+
+Parênteses
+Exponenciação
+Multiplicação e divisão, que possuem a mesma precedência
+Adição e subtração, que possuem a mesma precedência
+Usamos parênteses para forçar que uma expressão seja avaliada em uma determinada ordem desejada. Ex.: 2 * (3-1) = 4, mas 2 * 3 - 1 = 5.
+
+Operadores com a mesma precedência são avaliados da esquerda para a direita. Ex: 10 / 2 * 2 = 10 e 10 / (2 * 2) = 2.5. Mas há uma exceção para essa regra:
+ a exponenciação. Ex: 2**3**2 equivale a 2**(3**2) que é 512; note que isso é diferente de (2**3)**2, que é 64.
+
+Quando você estiver escrevendo uma expressão matemática e ficar na dúvida quanto às regras de precedência dos operadores, 
+então use parênteses para garantir que a ordem de avaliação será correta. Com isso, você evitará possíveis erros.

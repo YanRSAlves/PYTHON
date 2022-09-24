@@ -1,0 +1,8 @@
+print('Digite sua data de nascimento')
+Dia=input('Dia: ')
+Mês=input('Mês: ')
+Ano=input('Ano: ')
+print('Você nasceu no dia',Dia,'do mês',Mês,'no ano de',Ano,'. Comfirmar?')
+Confirmar=input('Sim ou Não: ')
+print('Muito obrigado pelo cadastro')
+print('Tenha um bom dia!')
