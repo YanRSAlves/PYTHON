@@ -1,5 +1,5 @@
 
-4) QUESTAO:
+#4) QUESTAO:
 pedido = []
 lista = ['tomate','ovo','sal', 'doce','fria']
 
