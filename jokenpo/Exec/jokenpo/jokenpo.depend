@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1679500172 source:c:\users\alves\desktop\jokenpo\exec\jokenpo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	<math.h>
+	<time.h>
+
