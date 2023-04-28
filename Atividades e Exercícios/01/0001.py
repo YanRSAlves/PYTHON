@@ -1,8 +1,9 @@
 sexo = 'F' or 'M'
 
 while True:
-    sexo = input('Qual o seu gênero? [M(masculino)/F(femenino)]').upper()
+    sexo = input('Qual o seu gênero? [M(masculino)/F(femenino)]: ').upper()
     if sexo == 'F' or sexo == 'M':
+        print('obrigado')
         break
     else:
         print('Digite novamente')

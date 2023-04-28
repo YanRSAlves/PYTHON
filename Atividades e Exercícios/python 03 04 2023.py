@@ -1,14 +1,29 @@
 
 
+frutas = ['maça', 'banana', 'pera', 'caju']
+print(len(frutas))
+for x in range(len(frutas)):
+    print(x+1,'ª fruta da lista:', frutas[x])
+
+print()
+
+for x in range(len(frutas)):
+    print('{}º fruta da lista = {}'.format(x+1, frutas[x]))
+
+print()
+for y in frutas:
+    print('frutas:', y)
+
+
+
 
 '''
-
-
-
 frutas = ['Maça', 'banana', 'pera','caju']
 frutas[1] = 'melão'
-print(frutas)
-
+for x in range(1,4):
+    print(frutas[x])
+'''
+'''
 frutas2 = frutas.copy()
 print(frutas)
 print(frutas2)
