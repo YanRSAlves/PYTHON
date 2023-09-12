@@ -1,0 +1,95 @@
+L = [1,2,3,4,5,6,7,8]
+print(L[::-1])
+
+'''lista = [101,202,303,404,505]
+for x in range(5):
+    print(f"lista[{x}] = ",lista[x])
+print("Lista Completa: {}". format(lista))'''
+    
+'''def multiplicador(numero):
+        global a # todas as referências à variável a são para a global
+        a = 2      # a global será alterado
+        print(f"Dentro da função,  variável  vale: {a}")
+        return a * numero
+
+
+a = 3  # esta variável tem escopo global
+b = multiplicador(5)
+print(f"A variável b vale: {b}")
+print(f"Fora da função, a variável a vale: {a}")
+'''
+'''def multiplicador(numero):
+        return a * numero
+
+a = 3 # esta variável tem escopo global
+b = multiplicador(5)
+print(f"A variável b vale: {b}")'''
+
+'''
+def multiplicador(numero):
+        a = 2 # esta variável tem escopo local
+        print(f"Dentro da função, a variável vale: {a}")
+        return a * numero
+
+a = 3 # esta variável tem escopo global
+b = multiplicador(5)
+print(f"Fora da função, a variável a vale: {a}")
+'''
+'''
+#atribuição multipla
+a, b = 1, 2
+print('Antes da Troca')
+print(f"os valores da variaveis sao a={a} e b={b}")
+#Primeira Troca
+temp = a 
+a = b 
+b = temp
+print("Primera troca")
+print(f"os valores da variaveis sao a={a} e b={b}")
+#Segunda troca
+a, b = b, a
+print("Segunda troca")
+print(f"os valores da variaveis sao a={a} e b={b}")
+'''
+'''
+nome = 'exemplo de string em Python'
+print(nome)
+print('valor da variavel nome = {}'. format(nome))
+print(f'valor da variavel nome = {nome}')
+print(f"valor da variavel nome = {nome}")
+
+'''
+
+'''
+for x in range(30):
+    print(x)
+'''
+'''
+a = 0
+for i in range(30):
+    if a % 2 == 0:
+        a += 1
+        continue
+    else:
+        if a % 5 == 0:
+            break
+        else:
+            a += 3
+print (a)
+'''
+
+
+
+
+'''
+def conta_numeros(n):
+    p = 0
+    for num in range(n+1):
+        if num%2 == 0:
+            p += 1
+    return p
+print(conta_numeros(98))
+
+print(help(int))
+print(dir(int))
+'''
