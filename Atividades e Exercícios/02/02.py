@@ -1,6 +1,6 @@
 valor = float(input("Digite o valor do produto: "))
 
-categoria = input("Digite a categoria do produto (A, B ou C): ")
+categoria = input("Digite a categoria do produto (A, B ou C): ").upper()
 
 if categoria == "A":
     valor_com_desconto = valor * 0.8  # desconto de 20%
