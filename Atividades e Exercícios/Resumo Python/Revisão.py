@@ -54,11 +54,48 @@
 # print(msg)
 
 #PROGRAMA DE DISPARO DE ALARME
+#
+# porta = 'a'
+# janela = 'f'
+#
+# alarme = (porta == 'a') or (janela == 'a')
+# msg = 'Alarme disparado? ' + str(alarme)
+#
+# print(msg)
 
-porta = 'a'
-janela = 'f'
-
-alarme = (porta == 'a') or (janela == 'a')
-msg = 'Alarme disparado? ' + str(alarme)
-
-print(msg)
+# print('PROGRAMA DE AVALIÇÕES ESCOLARES')
+# def lernotas():
+#     nota=float(input('Digite uma nota para o aluno(a): '))
+#     return nota
+#
+#
+# def resultado(nota1,nota2):
+#     media=(nota1+nota2)/2
+#     print("Nota 1: ", nota1)
+#     print("Nota 2: ",nota2)
+#     print(f'Nota1 + Nota2 = {nota1+nota2} Dividido por 2 = {media}  ')
+#     print("Média: ", media, "Resultado: ", end="")
+#     if media >= 7:
+#         print("Aprovado por Média ")
+#         print('Parabéns! \nBoas Férias')
+#     elif (media >= 4) and (media < 7):
+#         print('Ficou de Recuperação')
+#         recuperacao(media)
+#     else:
+#         print("Média Menor que 4 Reprovado! ", end='')
+#         print('Estude mais!')
+# def recuperacao(media):
+#     print('Já fez a prova de recuperação? [s/n]')
+#     option = input().upper()
+#     if option == 'S':
+#         nota_recuperacao = float(input('Qual foi sua                 -nota de Recuperação: '))
+#         resultado(media, nota_recuperacao)
+#     else:
+#         print('Estude Para Prova Final!')
+#
+#
+#
+#
+# a = lernotas()
+# b = lernotas()
+# resultado(a,b)
