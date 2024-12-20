@@ -99,3 +99,49 @@
 # a = lernotas()
 # b = lernotas()
 # resultado(a,b)
+
+#EXERCÍCIOS BEECROWD:
+
+#Neste problema, deve-se ler o código de uma peça 1,
+# o número de peças 1, o valor unitário de cada peça 1,
+# o código de uma peça 2, o número de peças 2 e o valor unitário
+# de cada peça 2. Após, calcule e mostre o valor a ser pago.
+
+# Entrada
+# O arquivo de entrada contém duas linhas de dados.
+# Em cada linha haverá 3 valores, respectivamente dois inteiros
+# e um valor com 2 casas decimais.
+#
+# Saída
+# A saída deverá ser uma mensagem conforme o exemplo fornecido abaixo,
+# lembrando de deixar um espaço após os dois pontos e um espaço após o "R$".
+# O valor deverá ser apresentado com 2 casas após o ponto.
+
+# peca1 = list(map(float, input().split()))
+# peca2 = list(map(float, input().split()))
+#
+# total1 = peca1[1] * peca1[2]
+# total2 = peca2[1] * peca2[2]
+# total = total1 + total2
+#
+# print(f'VALOR A PAGAR: R$ {total:.2f}')
+
+
+
+#
+# pi = 3.14159
+#
+# Raio = float(input())
+#
+# volume = (4.0/3.0) * pi * (Raio**3)
+#
+# print(f'VOLUME = {volume:.3f}')
+
+
+
+
+# valor = int(input())
+#
+# respostas = list(map(int, input().split()))
+# acertos = respostas.count(valor)
+# print(acertos)
