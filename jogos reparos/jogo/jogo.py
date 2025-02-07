@@ -1,58 +1,44 @@
 import time
-resp=1
-print ('Tente adivinhar o Número que eu estou pensando.')
-print ('Você só tem 5 chances e o número está entre 0 e 100.')
-while resp != '0':
+
+resp = "1"
+print("Tente adivinhar o número que estou pensando.")
+print("Você só tem 5 chances e o número está entre 0 e 100.")
+
+while resp != "0":
     t = time.localtime()
-    x=(((t[5]*3)/2)+t[4])-t[3]
-    if x>100:
-        x=100-(x-100)
+    x = (((t.tm_sec * 3) // 2) + t.tm_min) - t.tm_hour  # Ajustado para o formato correto
 
-    elif x<0:
-        x=0
-        
-    i=1
-    
-    print
+    if x > 100:
+        x = 100 - (x - 100)
+    elif x < 0:
+        x = abs(x)
+
+    i = 1
+
     try:
-        a=input('tentativa %d: ' % i)
-        a= int(a)
-    except:
-        a = ''
-        print ('Digite um número inteiro válido.')
-            
-    if a!='':
-        while a!=x and i<5:
-                if a==x:
-                    break
+        a = int(input(f"Tentativa {i}: "))
+    except ValueError:
+        a = None
+        print("Digite um número inteiro válido.")
 
-                elif a<x:
-                    print ('o numero é mais alto(+)')
-                    print
-
-                elif a>x and a!='':
-                    print ('o numero é mais baixo(-)')
-                    print
-
-                if a!='':
-                    i=i+1
-                    
-                try:
-                    a=raw_input('tentativa %d: ' % i)
-                    a= int(a)
-                except:
-                    a = ''
-                    print ('Digite um número inteiro válido.')
-                    print
-
-        if i==5 and a!=x:
-            print
-            print ('suas chances acabaram você perdeu!!!')
-            print ('o número era', x)
-            print
-
+    while a is not None and a != x and i < 5:
+        if a < x:
+            print("O número é mais alto (+)")
         else:
-            print
-            print ('Você acertou. Parabens!!!', a)
-            print
-        resp=input('Para jogar denovo aperte 1 - para sair aperte 0: ')
+            print("O número é mais baixo (-)")
+
+        i += 1
+
+        try:
+            a = int(input(f"Tentativa {i}: "))
+        except ValueError:
+            a = None
+            print("Digite um número inteiro válido.")
+
+    if a == x:
+        print(f"Você acertou! Parabéns!!! O número era {x}")
+    else:
+        print("Suas chances acabaram, você perdeu!!!")
+        print(f"O número era {x}")
+
+    resp = input("Para jogar de novo aperte 1 - para sair aperte 0: ")
